@@ -1,0 +1,101 @@
+name: 'ASU Drupal'
+description: 'Create a Drupal site for ASU'
+type: Site
+recipes:
+  - asu_secure_drupal
+  - site_builder_role
+install:
+  - admin_toolbar
+  - allowed_formats
+  - asu_brand
+  - asu_config_utility
+  - asu_react_core
+  - asu_react_integration
+  - asu_user
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - block_field
+  - breakpoint
+  - captcha
+  - cas
+  - ckeditor5
+  - components
+  - config
+  - config_update
+  - contact
+  - contextual
+  - crop
+  - current_page_crumb
+  - datetime
+  - datetime_range
+  - dblog
+  - decorative_image_widget
+  - devel
+  - devel_generate
+  - dynamic_page_cache
+  - editor
+  - editor_advanced_link
+  - editoria11y
+  - field_group
+  - field_menu
+  - field_states_ui
+  - field_ui
+  - file
+  - file_mdm
+  - fontawesome
+  - fontawesome_iconpicker_widget
+  - help
+  - history
+  - image
+  - image_widget_crop
+  - imagemagick
+  - inline_form_errors
+  - layout_builder
+  - layout_builder_restrictions
+  - layout_builder_usage_reports
+  - layout_section_classes
+  - linkit
+  - maxlength
+  - media
+  - media_library
+  - media_library_form_element
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - page_cache
+  - paragraphs
+  - path
+  - pathauto
+  - redirect
+  - robotstxt
+  - schema_metatag
+  - search
+  - seckit
+  - select2
+  - shortcut
+  - simple_sitemap
+  - sophron
+  - taxonomy
+  - toolbar
+  - views
+  - views_ui
+  - webform
+  - webform_ui
+config:
+  actions:
+    core.entity_view_display.node.article.default:
+      simpleConfigUpdate:
+        third_party_settings:
+          layout_builder:
+            enabled: true
+            allow_custom: true
+    core.entity_view_display.node.page.default:
+      simpleConfigUpdate:
+        third_party_settings:
+          layout_builder:
+            enabled: true
+            allow_custom: true
