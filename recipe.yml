@@ -3,7 +3,6 @@ description: 'Create a Drupal site for ASU'
 type: Site
 recipes:
   - asu_secure_drupal
-  - site_builder_role
 install:
   - admin_toolbar
   - allowed_formats
