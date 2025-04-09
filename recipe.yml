@@ -1,15 +1,15 @@
 name: 'ASU Drupal'
 description: 'Create a Drupal site for ASU'
 type: Site
-recipes:
-  - asu_secure_drupal
 install:
   - admin_toolbar
   - allowed_formats
   - asu_brand
   - asu_config_utility
+  - asu_governance
   - asu_react_core
   - asu_react_integration
+  - asu_secure_superadmin
   - asu_user
   - automated_cron
   - big_pipe
@@ -84,17 +84,3 @@ install:
   - views_ui
   - webform
   - webform_ui
-config:
-  actions:
-    core.entity_view_display.node.article.default:
-      simpleConfigUpdate:
-        third_party_settings:
-          layout_builder:
-            enabled: true
-            allow_custom: true
-    core.entity_view_display.node.page.default:
-      simpleConfigUpdate:
-        third_party_settings:
-          layout_builder:
-            enabled: true
-            allow_custom: true
