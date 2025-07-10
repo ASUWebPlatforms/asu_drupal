@@ -14,6 +14,7 @@ This recipe is intended to be used as a starting point for creating a new ASU Dr
 - allowed_formats
 - asu_brand
 - asu_config_utility
+- asu_governance
 - asu_react_core
 - asu_react_integration
 - asu_user
