@@ -9,9 +9,6 @@ This recipe is intended to be used as a starting point for creating a new ASU Dr
 ## Requirements
 ### Drupal Core
 - 10.3.x or higher
-### Recipes
-- asu_secure_drupal
-- site_builder_role
 ### Modules
 - admin_toolbar
 - allowed_formats
